@@ -144,12 +144,12 @@ class MainActivity : BaseSplitActivity() {
                 R.id.btn_load_kotlin_try -> launchActivity(KOTLIN_SAMPLE_CLASSNAME)
                 R.id.btn_load_java_try -> launchActivity(JAVA_SAMPLE_CLASSNAME)
                 R.id.btn_load_native_try -> launchActivity(NATIVE_SAMPLE_CLASSNAME)
+                R.id.btn_check_installed_module -> checkModuleInstalled()
             }
         }
     }
 
     private lateinit var manager: SplitInstallManager
-
     private lateinit var progress: Group
     private lateinit var buttons: Group
     private lateinit var progressBar: ProgressBar
@@ -269,6 +269,10 @@ class MainActivity : BaseSplitActivity() {
         }
     }
 
+    private fun checkModuleInstalled() {
+        toastAndLog("Installed module ${manager.installedModules}")
+    }
+
     /** Install all features deferred. */
     private fun installAllFeaturesDeferred() {
         manager.deferredInstall(installableModules).addOnSuccessListener {
@@ -356,6 +360,7 @@ class MainActivity : BaseSplitActivity() {
         setClickListener(R.id.btn_load_kotlin_try, clickListener)
         setClickListener(R.id.btn_load_java_try, clickListener)
         setClickListener(R.id.btn_load_native_try, clickListener)
+        setClickListener(R.id.btn_check_installed_module, clickListener)
     }
 
     private fun setClickListener(id: Int, listener: View.OnClickListener) {
