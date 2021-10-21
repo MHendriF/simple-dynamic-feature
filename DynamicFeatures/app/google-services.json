@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1020123001529",
+    "project_id": "dynamic-feature-module",
+    "storage_bucket": "dynamic-feature-module.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020123001529:android:af0c62cf19ecd7bf93e168",
+        "android_client_info": {
+          "package_name": "com.mhendrif.android.samples.dynamicfeatures.ondemand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020123001529-2pc4hvdtmmtus6u14tujajb7eklhhuch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzaeFLNyOAvcGEK0irJbhAX7zIBtU-LLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020123001529-2pc4hvdtmmtus6u14tujajb7eklhhuch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
