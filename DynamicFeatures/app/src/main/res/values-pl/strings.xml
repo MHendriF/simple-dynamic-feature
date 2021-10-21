@@ -43,4 +43,7 @@
     <string name="installing">Instalowanie %1$s</string>
     <string name="error_for_module">Błąd: %1$i dla modułu %2$s</string>
     <string name="asset_content">Zawartość assetu</string>
+    <string name="try_feature_kotlin">Try funkcję w Kotlinie</string>
+    <string name="try_feature_java">Try Uruchom funkcję w Javie</string>
+    <string name="try_native_code">Try natywną funkcję</string>
 </resources>

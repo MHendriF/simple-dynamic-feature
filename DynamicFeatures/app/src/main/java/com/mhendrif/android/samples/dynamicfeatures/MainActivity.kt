@@ -140,6 +140,10 @@ class MainActivity : BaseSplitActivity() {
                 R.id.btn_instant_dynamic_feature_url_load -> openUrl(instantModuleUrl)
                 R.id.lang_en -> loadAndSwitchLanguage(LANG_EN)
                 R.id.lang_pl -> loadAndSwitchLanguage(LANG_PL)
+
+                R.id.btn_load_kotlin_try -> launchActivity(KOTLIN_SAMPLE_CLASSNAME)
+                R.id.btn_load_java_try -> launchActivity(JAVA_SAMPLE_CLASSNAME)
+                R.id.btn_load_native_try -> launchActivity(NATIVE_SAMPLE_CLASSNAME)
             }
         }
     }
@@ -320,10 +324,8 @@ class MainActivity : BaseSplitActivity() {
     /** Display a loading state to the user. */
     private fun displayLoadingState(state: SplitInstallSessionState, message: String) {
         displayProgress()
-
         progressBar.max = state.totalBytesToDownload().toInt()
         progressBar.progress = state.bytesDownloaded().toInt()
-
         updateProgressMessage(message)
     }
 
@@ -350,6 +352,10 @@ class MainActivity : BaseSplitActivity() {
         setClickListener(R.id.btn_instant_dynamic_feature_url_load, clickListener)
         setClickListener(R.id.lang_en, clickListener)
         setClickListener(R.id.lang_pl, clickListener)
+
+        setClickListener(R.id.btn_load_kotlin_try, clickListener)
+        setClickListener(R.id.btn_load_java_try, clickListener)
+        setClickListener(R.id.btn_load_native_try, clickListener)
     }
 
     private fun setClickListener(id: Int, listener: View.OnClickListener) {

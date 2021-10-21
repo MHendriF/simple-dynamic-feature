@@ -42,4 +42,7 @@
     <string name="error_for_module">Error: %1$i for module %2$s</string>
     <string name="asset_content">Asset content</string>
     <string name="title_initialinstall">Initial Installation</string>
+    <string name="try_feature_kotlin">Try Kotlin Feature</string>
+    <string name="try_feature_java">Try Java Feature</string>
+    <string name="try_native_code">Try Native Feature</string>
 </resources>
